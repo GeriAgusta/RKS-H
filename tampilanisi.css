@@ -1,0 +1,28 @@
+body{/*menentukan jenis warna dan font */
+	font-family: sans-serif;
+	background: #87CEFA;	
+}
+h1{/*ketebalan font*/
+	text-align: center;
+	font-weight: 300;
+}
+.tulisan_login{/*membuat semua huruf mjd ke tengah*/
+	text-align: center;
+	text-transform: uppercase;
+} 
+.kotak_login{/*meletakkan form ke tengah*/
+	width: 350px;
+	background: white;
+	margin: 80px auto;
+	padding: 30px 20px;
+} 
+label{
+	font-size: 11pt;
+}
+.form_login{/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
