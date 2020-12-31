@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Form Isian Data</title>
+   <link rel="stylesheet" type="text/css" href="tampilanisi.css">
+</head>
+ 
+<body>
+	<h2>Silahkan Isi Form Data </h2>
+<form name="formku"><table>
+	<tr>
+		<td>Id</td>
+		<td> : </td>
+		<td><input type="text" name="nama"></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td> : </td>
+		<td><input type="text" name="email"></td>
+	</tr>
+	<tr>
+		<td>Telephone</td>
+		<td> : </td>
+		<td><input type="text" name="nohp"></td>
+	</tr>
+
+	<tr>
+		<td>Nominal Item</td>
+		<td> : </td>
+		<td><select name="harga">
+		<option value="Rp.7600"> 28 dm(Rp.7600)</option>
+		<option value="Rp.15000"> 56 dm(Rp.15000)</option>
+		<option value="Rp.21000"> 86 dm(Rp.21000)</option>
+		<option value="Rp.65000"> 240 dm(Rp.65000)</option>	
+		<option value="Rp.110000"> 408 dm(Rp.110000)</option>
+		<option value="Rp.150000"> 568 dm(Rp.150000)</option>
+		<option value="Rp.230000"> 875 dm(Rp.230000)</option>
+		<option value="Rp.500000"> 2010 dm(Rp.500000)</option>	
+	</select></td>
+	</tr>
+	
+	<tr>
+		<td>Metode Pembayaran</td>
+		<td> : </td>
+		<td><select name="metode">
+		<option value="Gopay">Gopay</option>
+		<option value="OVO">OVO</option>
+		<option value="Dana">Dana</option>
+		<option value="ShopeePay">ShopeePay</option>
+		<option value="LinkAja">LinkAja</option>
+	</select></td>
+	</tr>
+	
+	</table>
+	<br>
+	<input type="button" onclick="tekan()" value="Confirmasi Pesanan">	
+<br/><br/><br/><br/><br><br>
+	<table>
+		<tr>
+			<td>Id </td>
+			<td> : </td>
+			<td><input name="tampil_nama" type="text"></td>
+		</tr>
+		<tr>
+			<td>Email </td>
+			<td> : </td>
+			<td><input name="tampil_email" type="text"></td>
+		</tr>
+		<tr>
+			<td>Telephone </td>
+			<td> : </td>
+			<td><input name="tampil_nohp" type="text"></td>
+		</tr>
+		
+		<tr>
+		<td>Metode Pembayaran</td>
+		<td> : </td>
+		<td><input type="text" name="tampil_metode"></td>
+		</tr>	
+		<tr>
+		<td>Total Bayar</td>
+		<td> : </td>
+		<td><input type="text" name="tampil_harga"></td></tr>
+	</table></font>
+<center><h2>Silahkan Lakukan Pembayaran<br/>dengan men-Scan kode QRIS dibawah ini :</h2>
+<img src="Foto/QRIS.jpeg" height="250" width="250"><br/><br/></center>
+	<script type="text/javascript">
+		function tekan(){
+			var Nama = (document.formku.nama.value);
+			var email = (document.formku.email.value);
+			var Telephone = (document.formku.nohp.value);
+			var metode = (document.formku.metode.value);
+			var Harga = (document.formku.harga.value);			
+
+			document.formku.tampil_nama.value = Nama;
+			document.formku.tampil_email.value = email;
+
+			document.formku.tampil_nohp.value = Telephone;
+			document.formku.tampil_metode.value = metode;
+			document.formku.tampil_harga.value = Harga;
+		}
+	</script>
+	<center>
+	<a href="akhir.html">
+	<input type="button" onclick="" value="Selesai"><br/><br/></a>
+	</center>
+</form>
+</body>
+</html>
