@@ -9,4 +9,4 @@ https://drive.google.com/drive/folders/1k6Qvw9fg7ivPXkVRSJxWRG1CYUgteGg3?usp=sha
 
 1. Tampilan Awal/Home Aplikasi
 
-![Tampilan Awal](https://ibb.co/RN5YSGC)
+![Tampilan Awal](https://i.ibb.co/C6rmtpn/1-Halaman-Awal-index-html.png)
